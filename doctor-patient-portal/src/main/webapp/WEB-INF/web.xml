@@ -1,0 +1,173 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <!-- Add welcome-file-list to avoid the issue -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Configuration for register -->
+    <servlet>
+        <servlet-name>adminLogin</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.controller.AdminLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>adminLogin</servlet-name>
+        <url-pattern>/adminLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>adminLogout</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.controller.AdminLogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>adminLogout</servlet-name>
+        <url-pattern>/adminLogout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delDoctor</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.controller.DeleteDoctorServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>delDoctor</servlet-name>
+        <url-pattern>/deleteDoctor</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addDoctor</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.controller.DoctorServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addDoctor</servlet-name>
+        <url-pattern>/addDoctor</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addSpecial</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.controller.SpecialistServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addSpecial</servlet-name>
+        <url-pattern>/addSpecialist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updDoctor</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.controller.UpdateDoctorServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updDoctor</servlet-name>
+        <url-pattern>/updateDoctor</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>docChangePass</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.doctor_controller.DoctorChangePassword</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>docChangePass</servlet-name>
+        <url-pattern>/doctorChangePassword</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>docEditProfile</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.doctor_controller.DoctorEditProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>docEditProfile</servlet-name>
+        <url-pattern>/doctorEditProfile</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>docLogin</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.doctor_controller.DoctorLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>docLogin</servlet-name>
+        <url-pattern>/doctorLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>docLogout</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.doctor_controller.DoctorLogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>docLogout</servlet-name>
+        <url-pattern>/doctorLogout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateStatus</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.doctor_controller.UpdateStatus</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updateStatus</servlet-name>
+        <url-pattern>/updateStatus</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addAppoint</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.user_controller.AppointmentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addAppoint</servlet-name>
+        <url-pattern>/addAppointment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userChangePass</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.user_controller.ChangePassword</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>userChangePass</servlet-name>
+        <url-pattern>/userChangePassword</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userLogin</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.user_controller.UserLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>userLogin</servlet-name>
+        <url-pattern>/userLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userLogout</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.user_controller.UserLogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>userLogout</servlet-name>
+        <url-pattern>/userLogout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userRegister</servlet-name>
+        <servlet-class>com.jspider.doctor_patient_portal.user_controller.UserRegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>userRegister</servlet-name>
+        <url-pattern>/user_register</url-pattern>
+    </servlet-mapping>
+</web-app>
